@@ -19,19 +19,35 @@ a:hover {
   border: 1px solid #fff;
 }
 
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
 
 /*
  * Base structure
  */
 
+ h3 {
+   padding-top: 20px;
+ }
+
+
+
 html,
 body {
   height: 100%;
-  background-image: url("ocean-rocks.jpeg");
+  /* background-image: url("ocean-rocks.jpeg"); */
   background-color: #333;
 }
 body {
-  color: #000033;
+  /* color: #000033; */
+  color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
@@ -111,7 +127,7 @@ body {
  */
 
 .cover {
-  padding: 0 20px;
+  padding: 0 20px 30px;
 }
 .cover .btn-lg {
   padding: 10px 20px;
@@ -122,6 +138,7 @@ body {
 /*
  * Footer
  */
+
 
 .mastfoot {
   color: #999; /* IE8 proofing */
@@ -153,6 +170,10 @@ body {
   .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
+}
+
+.text-block {
+  text-align: left
 }
 
 @media (min-width: 992px) {
