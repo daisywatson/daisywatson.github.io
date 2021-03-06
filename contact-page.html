@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Daisy Watson</title>
+    <title>About Me</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -30,15 +30,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PCZ6BF1CCT"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-PCZ6BF1CCT');
-  </script>
+     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
 
   <body>
@@ -54,36 +46,40 @@
               <h3 class="masthead-brand"></h3>
               <nav>
                 <ul class="nav masthead-nav">
-                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="index.html">Home</a></li>
                   <li><a href="projects-page.html">Programming Projects</a></li>
                   <li><a href="writing-samples.html">Writing Samples</a></li>
                   <li><a href="daisywatson-resume-web.pdf">My Résumé</a><li>
                   <li><a href="about-page.html">About Me</a></li>
+                  <li class="active"><a href="contact-page.html">Contact</a></li>
                 </ul>
               </nav>
             </div>
           </div>
 
-          <div class="inner cover">
-            <h1 class="cover-heading">Daisy Watson</h1>
-            <p class="lead">Software Engineer and Freelance Technical Writer</p>
-              <a href="https://github.com/daisywatson" class="btn btn-lg btn-primary">My GitHub</a>
-              <a href="https://www.linkedin.com/in/daisy-watson/" class="btn btn-lg btn-info">LinkedIn</a>
-              <a href="mailto:ddaisywatson@gmail.com" class="btn btn-lg btn-success">Email Me</a>
-            </p>
-            <div class="text-block">
-              <p class="lead">Skills:</p>
-              <p>Languages: Python, JavaScript, C#, Java, C++</p>
-              <p>Frameworks: Flask, Express, .NET, Android</p>
-              <p>Libraries: React, jQuery, jQuery UI, Bootstrap, Semantic UI </p>
-              <p>Databases: MongoDB, CouchDB, SQLite, PostgreSQL</p>
-            </div>
-          </div>
+          <!-- modify this form HTML and place wherever you want your form -->
 
+    <form
+      action="https://formspree.io/f/xknpldqk"
+      method="POST"
+    >
+      <label>
+        Your email:
+        <input type="text" name="_replyto">
+      </label>
+    </br>
+      <label>
+        Your message:
+        <textarea name="message"></textarea>
+      </label>
+    </br>
+
+      <!-- your other form fields go here -->
+
+      <button type="submit" class="btn btn-lg btn-success">Send</button>
+    </form>
         </div>
-
       </div>
-
     </div>
 
     <!-- Bootstrap core JavaScript
